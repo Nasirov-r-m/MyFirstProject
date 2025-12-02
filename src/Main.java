@@ -74,7 +74,7 @@ public class Main {
         var openingHoursMore = morePeople * oneEmployee;
         System.out.println(openingHoursMore);
 
-        System.out.println("Если в компании работает " + morePeople + " человека, то всего " + openingHoursMore + " часов работы может быть поделено между сотрудниками");
+        System.out.println("Если в компании работает " + morePeople + " человека, то всего " + openingHoursMore + " часов работы может быть поделено между сотрудниками!");
 
 
 
