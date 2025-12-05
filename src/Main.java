@@ -156,8 +156,8 @@ public class Main {
         System.out.println(salaryDifferenceKristina);
 
         System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + salaryDifferenceMasha + " рублей.");
-        System.out.println("Маша теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + salaryDifferenceDenis + " рублей.");
-        System.out.println("Маша теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + salaryDifferenceKristina + " рублей.");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + salaryDifferenceDenis + " рублей.");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + salaryDifferenceKristina + " рублей.");
 
 
 
