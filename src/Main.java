@@ -32,8 +32,8 @@ public class Main {
 
         // Задание 4
 
-        int humanAge = 10;
-        if (humanAge > 2 && humanAge < 6) {
+        int humanAge = 6;
+        if (humanAge >= 2 && humanAge <= 6) {
             System.out.println("Если возраст человека равен " + humanAge + ", то ему нужно ходить в детский сад!");
         } if (humanAge >= 7 && humanAge <= 17) {
             System.out.println("Если возраст человека " + humanAge + ", то ему нужно ходить в школу!");
@@ -46,11 +46,11 @@ public class Main {
 
         // Задание 5
 
-        int ageChild = 15;
+        int ageChild = 4;
         if (ageChild < 5) {
             System.out.println("Если возраст ребенка равен " + ageChild + ", то ему нельзя кататься на аттракционе!");
         }
-        if (ageChild > 5 && ageChild <= 14) {
+        if (ageChild >= 5 && ageChild <= 14) {
             System.out.println("Если возраст ребенка равен " + ageChild + ", то ему можно кататься на аттракционе только в сопровождении взрослого!");
         }
         if (ageChild > 14) {
