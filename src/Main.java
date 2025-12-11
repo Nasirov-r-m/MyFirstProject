@@ -3,106 +3,81 @@ import jdk.jshell.spi.ExecutionControl;
 public class Main {
     public static void main(String[] args) {
 
-        // Задание 1 / 2
+        // Задание 1
 
-        int clientOs = 0;
-        int ios = 0;
-        int android = 1;
-        int clientDeviceYear = 2014;
+        for (int i =1; i<= 10; i= i+1) {
+            System.out.println(i);
+        }
 
-        if (clientOs == ios && clientDeviceYear <= 2015) {
+        // Задание 2
 
-            System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-        } else if (clientOs == ios && clientDeviceYear > 2015) {
-            System.out.println("Установите версию приложения для IOS по ссылке");
-        } else if (clientOs == android && clientDeviceYear <= 2015) {
-            System.out.println("Установите облегченную версию приложения для Android");
-        } else if (clientOs == android && clientDeviceYear > 2015) {
-            System.out.println("Установите версию приложения для Android");
+        for (int i = 10; i > 0; i=i-1) {
+            System.out.println(i);
         }
 
         // Задание 3
 
-        int year = 2024;
-        if (year < 1584) {
-            System.out.println("Год не является высокосным");
-        } else if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-            System.out.println("Год является высокосным");
-        } else {
-            System.out.println("Год не является высокосным");
+        for (int i = 0; i <= 17; i=i+2){
+            System.out.println("Четные числа " + i);
         }
 
         // Задание 4
 
-        int deliveryDistance = 95;
-        int term = 1;
-        if (deliveryDistance <= 20) {
-            System.out.println("Потребуется дней: " + term);
-        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней: " + (term + 1));
-        } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется дней: " + (term + 2));
-        } else if (deliveryDistance > 100) {
-            System.out.println("Доставка не осуществляется");
+        for (int i = 10; i >= -10; i= i-1 ){
+            System.out.println(i);
         }
 
         // Задание 5
 
-        int monthNumber = 13;
+        for (int i = 1904; i <= 2096; i = i+4){
+            System.out.println(i + " год является високосным");
+        }
 
-        switch (monthNumber) {
-            case 1:
-                System.out.println("Сейчас зима");
-                break;
+        // Задание 6
 
-            case 2:
-                System.out.println("Сейчас зима");
-                break;
+        for (int i = 7; i <=98; i=i+7){
+            System.out.println(i);
+        }
 
-            case 3:
-                System.out.println("Сейчас весна");
-                break;
+        // Задание 7
 
-            case 4:
-                System.out.println("Сейчас весна");
-                break;
+        for (int i = 1; i<=512; i=i*2){
+            System.out.println(i);
+        }
 
-            case 5:
-                System.out.println("Сейчас весна");
-                break;
+        // Задание 8
 
-            case 6:
-                System.out.println("Сейчас лето");
-                break;
+        int salary = 29000;
+        int total = 0;
 
+        for (int i = 1; i <= 12; i=i+1) {
+            total = total + salary;
 
-            case 7:
-                System.out.println("Сейчас лето");
-                break;
+            System.out.println("Месяц " + i + " сумма накоплений составит " + total);
+        }
 
-            case 8:
-                System.out.println("Сейчас лето");
-                break;
+        // Задание 9
 
-            case 9:
-                System.out.println("Сейчас осень");
-                break;
+        int salary1 = 29000;
+        int savings = 0;
 
-            case 10:
-                System.out.println("Сейчас осень");
-                break;
-
-            case 11:
-                System.out.println("Сейчас осень");
-                break;
-
-            case 12:
-                System.out.println("Сейчас зима");
-                break;
-
-            default:
-                System.out.println("Ошибка");
+        for (int i = 1; i<=12; i=i+1){
+            savings = savings + savings/100;
+            savings = savings + salary1;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + savings);
 
         }
+
+        // Задание 10
+
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("2*" + i + "=" + i * 2);
+        }
+
+
+
+
+
     }
 }
