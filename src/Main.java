@@ -1,121 +1,69 @@
-import jdk.jshell.spi.ExecutionControl;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
         // Задание 1
-        int firstFriday = 3;
-        for (int day = firstFriday; firstFriday <= 31; firstFriday = firstFriday + 7) {
-            System.out.println("Сегодня пятница, " + firstFriday + " число. Необходимо подготовить отчет");
-        }
+
+       int arrayOne [] = {1,2,3};
+       float arrayTwo [] = {1.57f, 7.654f, 9.986f};
+       int arrayThree[] = new int [5];
+       arrayThree[0] = 10;
+       arrayThree[1] = 20;
+       arrayThree[2] = 30;
+       arrayThree[3] = 40;
+       arrayThree[4] = 50;
 
         // Задание 2
 
-        // Задание 2.1
-
-        int distance = 42_195;
-        int reminder = 500;
-
-        do {
-            System.out.println("Держись, осталось " + distance);
-            distance = distance - reminder;
-
-        } while (distance >= 0);
-
-
-        // Задание  2.2
-
-        int distance1 = 42195;
-
-        for ( int passed = 0; passed <=distance1; passed = passed + 500) {
-            // использовал цифры вместо переменной, потому, что с переменной идея не запускала второй вариант.
-            int finish = distance1 - passed;
-            System.out.println("Держить, осталось, " + finish + " метров");
-        }
+        System.out.println(Arrays.toString(arrayOne));
+        System.out.println(Arrays.toString(arrayTwo));
+        System.out.println(Arrays.toString(arrayThree));
 
         // Задание 3
+        // arrayOne
 
-        // Задание 3.1
-
-        int money = 1000;
-        int day = 0;
-
-        while (money >= 100) {
-
-            day++;
-            money = money - 100;
-            if (day % 5 == 0) {
-                money = money + 100;
-                System.out.println("Сегодня " + day + " день, парковка БЕСПЛАТНО ");
-                continue;
+        for (int i = arrayOne.length - 1; i >=0; i-- ) {
+            System.out.print(arrayOne[i]);
+            if (i != 0) {
+                System.out.print(", ");
             }
-            System.out.println("Сегодня " + day + " день парковки, остаток средств " + money);
+        }
+        System.out.println(""); // прописал пустой вывод, потому, что arrayOne
+        // и arrayTwo выводились в одну строку.
 
 
+        // arrayTwo
+        for ( int a = arrayTwo.length - 1; a >=0; a--) {
+            System.out.print(arrayTwo[a]);
+            if (a  != 0) {
+                System.out.print(", ");
+            }
         }
 
-        // Задание 3.2
+        System.out.println("");
 
-        // В этом задании на 1-й день выводит отстаток средств = 1000
+        // arrayThree
 
-
-        int days = 0;
-
-        for (int balance = 1000; balance >= 0; balance = balance - 100) {
-            days++;
-
-            if (days % 5 == 0) {
-                System.out.println("Сегодня " + days + " день, парковка БЕСПЛАТНАЯ");
-                balance = balance + 100;
-                continue;
+        for ( int b = arrayThree.length -1; b >= 0; b--){
+            System.out.print(arrayThree[b]);
+            if (b != 0) {
+                System.out.print(", ");
             }
-
-            System.out.println(days + " день парковки. Остаток средств " + balance);
         }
+        System.out.println("");
 
 
         // Задание 4
 
-        int month = 0;
-        double total = 0;
-        while (total < 12_000_000) {
-            month++;
-            total = total + 15_000;
-
-            if (month % 6 == 0) {
-                total = total * 1.07;
-            }
-            {
-                System.out.printf(" Месяц %d, сумма накоплений %.2f рублей %n ", month, total);
-
-                }
-            }
-
-        // Задание 5
-
-
-        int charge = 30;
-        int minute = 0;
-        int overheats = 0;
-
-        while (charge < 100 && overheats <= 3) {
-            minute++;
-            charge = charge + 2;
-
-            if (minute % 10 == 0) {
-                overheats++;
-                minute += 2;
-                System.out.println(" Случился перегрев "+ overheats + ". Зарядка приостановленна на 2 минуты. Заряд " + charge + "%" );
-                if (overheats >= 3) {
-                    System.out.println(" Случился 3-й перегрев. Зарядка аварийно приостановленна. Уровень заряда " + charge);
-                    break;
-                }
-                continue;
-            }
-
-            System.out.println("Прошло времени " + minute + " min. Текущий заряд "+ charge +" % ");
-
+        for (int c = 0; c < arrayOne.length; c++) {
+            if (arrayOne[c] %2 != 0)
+                arrayOne[c] ++;
         }
+        System.out.println(Arrays.toString(arrayOne));
+
+
+
 
 
 
