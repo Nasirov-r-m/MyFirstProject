@@ -1,4 +1,3 @@
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.Arrays;
 
 public class Main {
@@ -45,12 +44,12 @@ public class Main {
 
         int [] inputArray2 = {50_000,100_000, 150_000, 200_000, 250_000};
         int newMeaning = 0;
-        float [] outputArray2 = new float [5];
+        double [] outputArray2 = new double[5];
         System.out.print("ЗП сотрудников ");
         System.out.println(Arrays.toString(inputArray2));
 
-        for (float pay : inputArray2) {
-            float tax = pay * 0.13f;
+        for (double pay : inputArray2) {
+            double tax = pay * 0.13d;
             outputArray2[newMeaning] = tax;
             newMeaning++;
 
@@ -97,17 +96,18 @@ public class Main {
         // Задание 5
 
         int [] inputArray5 = {10_000, 20_000, -5000, -10_000, 0};
-        boolean [] outputArray5 = new boolean[5];
+        int [] outputArray5 = new int [1];
+         int sumMonth = 0;
         System.out.println(Arrays.toString(inputArray5));
 
-        for (int i = 0; i < inputArray5.length; i++) {
-           if (inputArray5[i] > 0){
-               outputArray5[i] = true;
-           } else {
-               outputArray5[i] = false;
+        for (int element : inputArray5) {
+            if (element > 0) {
+                sumMonth++;
            }
         }
-        System.out.println(Arrays.toString(outputArray5));
+        outputArray5[0] = sumMonth;
+        System.out.println(Arrays.toString(outputArray5) + " - количество месяцев с прибылью");
+
 
 
 
