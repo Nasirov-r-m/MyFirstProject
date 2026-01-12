@@ -40,7 +40,6 @@ public class Main {
     }
 
     // Задание 3
-
     public static int calculationOfDelivery (int diliveryDistance) {
         int deliveryDays = 1;
         if (diliveryDistance >= 0 && diliveryDistance <= 20) {
