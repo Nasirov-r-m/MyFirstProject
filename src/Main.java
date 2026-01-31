@@ -1,32 +1,18 @@
 import java.util.Arrays;
 
 public class Main {
+
     public static void main(String[] args) {
+        Author levTolstoy = new Author("Толстой ", "Лев " );
+        Author nikolayGogol = new Author("Гоголь " , "Николай ");
 
-        // Задание 1
+        Book voinaIMir = new Book("Лев Толстой ", "Война и Мир ", 1863 );
+        Book tarasBulba = new Book("Николай Гоголь ", "Тарас Бульба ",1835);
 
-        String firstName = "Ivan";
-        String middleName = "Ivanovich";
-        String lastName = "Ivanov";
-        String fullName = lastName + " " + firstName + " " + middleName;
+        voinaIMir.setAgePub(2000);
 
-        System.out.println("Ф.И.О. сотрудника - " + String.format(fullName));
-
-        // Задание 2
-
-        String fullName1 = fullName.toUpperCase();
-        System.out.println("Ф.И.О. сотрудника для заполнения отчета - " + String.format(fullName1));
-
-        // Задание 3
-
-        String fullName2  = "Иванов Семён Семёнович";
-        String name2 = fullName2.replace('ё', 'е');
-        System.out.println("Ф.И.О. сотрудника - " + String.format(name2));
-
-
-
-
-
+        System.out.println("Книга: " + voinaIMir.getTitle() + voinaIMir.getNameAuthor() + "Автор: " + levTolstoy.getFirstnameAuthor() + levTolstoy.getLastNameAuthor() + "Год публикации: " + voinaIMir.getAgePub() );
+        System.out.println("Книга: " + tarasBulba.getTitle() + tarasBulba.getNameAuthor()+ "Автор: " + nikolayGogol.getFirstnameAuthor() + nikolayGogol.getLastNameAuthor() + "Год публикации: " + tarasBulba.getAgePub());
 
 
 
