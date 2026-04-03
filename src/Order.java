@@ -8,6 +8,7 @@ public class Order {
         this.customer = customer;
         this.basket = basket;
     }
+    @Override
     public String toString(){
         return "Покупатель: " + customer + " " + Arrays.toString(basket);
 

@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
         Product macbook = new Product(1, "Макбук", 100_000, "Электроника");
-        Product mouse = new Product(1, "Макбук", 100_000, " Электроника");
+        Product mouse = new Product(1,"Макбук",100_000,"Электроника");
         Product headphones = new Product(3, "Наушники", 15000, "Периферия");
 
         System.out.println(macbook);

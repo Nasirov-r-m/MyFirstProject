@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Objects;
 
 public class Product {
@@ -17,12 +18,16 @@ public class Product {
         return " Товар [ Аритикул = " + this.id + ", Название = " + this.name + ", Цена = " + this.price + ", Категория = " + this.category + " ]";
 
     }
+    @Override
     public boolean equals(Object o) {
      if (this == o)
          return true;
      if (o == null || getClass() != o.getClass()) return false;
      Product product = (Product) o;
      return id == product.id && Objects.equals(product.category, this.category);
+
+
+
     }
 
 
