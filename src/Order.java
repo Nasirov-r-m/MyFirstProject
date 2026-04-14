@@ -18,7 +18,7 @@ public class Order {
         }
 
         Order order = (Order) o;
-        return basket == order.basket && Objects.equals(customer, order.customer);
+        return Arrays.equals(basket,order.basket) && Objects.equals(customer, order.customer);
 
     }
 }
