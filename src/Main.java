@@ -13,9 +13,8 @@ public class Main {
         System.out.println(headphones);
         System.out.println(macbook.equals(mouse));
         System.out.println(headphones.equals(mouse));
-Product[] products = {macbook, mouse, headphones};
-Order ruslan = new Order("Руслан", products);
-        System.out.println(ruslan);
+
+
 
 
     }
