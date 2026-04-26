@@ -1,18 +1,35 @@
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Main {
 
     public static void main(String[] args) {
-        Author levTolstoy = new Author("Толстой ", "Лев " );
-        Author nikolayGogol = new Author("Гоголь " , "Николай ");
+        Product macbook = new Product(1, "Макбук", 100_000, "Электроника");
+        Product mouse = new Product(1,"Макбук",100_000,"Электроника");
+        Product headphones = new Product(3, "Наушники", 15000, "Периферия");
 
-        Book voinaIMir = new Book(levTolstoy, "Война и Мир ", 1863 );
-        Book tarasBulba = new Book(nikolayGogol, "Тарас Бульба ",1835);
+        System.out.println(macbook);
+        System.out.println(mouse);
+        System.out.println(headphones);
+        System.out.println(macbook.equals(mouse));
+        System.out.println(headphones.equals(mouse));
 
-        voinaIMir.setAgePub(2001);
+        System.out.println("-----------");
 
-        System.out.println("Книга: " + voinaIMir.getTitle() + voinaIMir.getNameAuthor() + "Автор: " + levTolstoy.getFirstNameAuthor() + levTolstoy.getLastNameAuthor() + "Год публикации: " + voinaIMir.getAgePub() );
-        System.out.println("Книга: " + tarasBulba.getTitle() + tarasBulba.getNameAuthor()+ "Автор: " + nikolayGogol.getFirstNameAuthor() + nikolayGogol.getLastNameAuthor() + "Год публикации: " + tarasBulba.getAgePub());
+        Product[] productsRuslan = {macbook,mouse};
+        Order ruslan = new Order("Руслан", productsRuslan);
+
+        Product[] productsMia = {macbook,headphones} ;
+        Order Mia = new Order("Мия", productsRuslan);
+
+
+        Product[] productsDiana = {macbook,mouse};
+        Order diana = new Order("Диана", productsDiana);
+
+        System.out.println(ruslan.equals(diana));
+        System.out.println(ruslan.equals(Mia));
+        System.out.println(productsRuslan.equals(productsDiana));
+        System.out.println(productsMia.equals(productsDiana));
 
 
 
