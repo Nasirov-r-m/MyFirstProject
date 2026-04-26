@@ -16,7 +16,7 @@ public class Main {
 
         System.out.println("-----------");
 
-        Product[] productsRuslan = {macbook,mouse} ;
+        Product[] productsRuslan = {macbook,mouse};
         Order ruslan = new Order("Руслан", productsRuslan);
 
         Product[] productsMia = {macbook,headphones} ;
@@ -24,7 +24,7 @@ public class Main {
 
 
         Product[] productsDiana = {macbook,mouse};
-        Order diana = new Order("Руслан", productsDiana);
+        Order diana = new Order("Диана", productsDiana);
 
         System.out.println(ruslan.equals(diana));
         System.out.println(ruslan.equals(Mia));
